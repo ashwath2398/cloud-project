@@ -50,7 +50,7 @@ The website follows a serverless architecture to keep costs to literally 0$ and 
     ```
 
 4.  **Upload Frontend Code**
-    Push changes to the `main`/`master` branch. GitHub Actions will automatically detect the commit and upload `index.html` and `resume.pdf` to the S3 bucket.
+    Push changes to the `main`/`master` branch. GitHub Actions will automatically detect the commit and upload `index.html` and your .pdf file to the S3 bucket.
 
 ## 🔄 CI/CD Pipeline
 The project includes a GitHub Actions workflow (`.github/workflows/front-end-cicd.yml`) that runs on every push to the `main`/`master` branch.
