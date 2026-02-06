@@ -33,7 +33,7 @@ The website follows a serverless architecture to keep costs to literally 0$ and 
 1.  **Clone the Repository**
     ```bash
     git clone [https://github.com/ashwath2398/cloud-project.git](https://github.com/ashwath2398/cloud-project.git)
-    cd cloud-resume-challenge
+    cd cloud-project
     ```
 
 2.  **Initialize Terraform**
@@ -50,10 +50,10 @@ The website follows a serverless architecture to keep costs to literally 0$ and 
     ```
 
 4.  **Upload Frontend Code**
-    Push changes to the `main` branch. GitHub Actions will automatically detect the commit and upload `index.html` and `resume.pdf` to the S3 bucket.
+    Push changes to the `main`/`master` branch. GitHub Actions will automatically detect the commit and upload `index.html` and `resume.pdf` to the S3 bucket.
 
 ## 🔄 CI/CD Pipeline
-The project includes a GitHub Actions workflow (`.github/workflows/front-end-cicd.yml`) that runs on every push to the `main` branch.
+The project includes a GitHub Actions workflow (`.github/workflows/front-end-cicd.yml`) that runs on every push to the `main`/`master` branch.
 1.  Checks out the code.
 2.  Configures AWS Credentials (stored in GitHub Secrets).
 3.  Syncs the HTML and PDF files to the S3 bucket.
