@@ -58,3 +58,7 @@ The project includes a GitHub Actions workflow (`.github/workflows/front-end-cic
 2.  Configures AWS Credentials (stored in GitHub Secrets).
 3.  Syncs the HTML and PDF files to the S3 bucket.
 
+Note when making live (if you dont mind sharing you personal info all over the internet) - 
+1. Add this command in .yml file `aws s3 cp resume.pdf s3://${{ secrets.S3_BUCKET_NAME }}/` 
+2. Save your personal file as `resume.pdf` in this cloned folder. 
+3. If you branch is `main` change this in .yml also.
